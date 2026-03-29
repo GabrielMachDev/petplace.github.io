@@ -1,76 +1,94 @@
-/* Reset e fonte */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f8f9fa !important;
+  letter-spacing: 1px;
 }
 
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
-  line-height: 1.6;
+.navbar-brand img {
+  border-radius: 50%;
+  margin-right: 8px;
 }
 
-/* Cabeçalho */
-header {
-  background: linear-gradient(90deg, #00695c, #004d40);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-header h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
+/* Links da navbar */
+.navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #ff9800;
+.navbar-nav .nav-link:hover {
+  color: #55237A !important;
+}
+
+/* Barra de pesquisa */
+form[role="search"] input {
+  border-radius: 20px;;
+}
+
+form[role="search"] button {
+  border-radius: 20px;
 }
 
 /* Carrossel */
-.carousel-inner img {
-  height: 450px;
+#carouselPet img {
+  max-height: 400px; 
   object-fit: cover;
-  border-radius: 8px;
 }
 
-/* Conteúdo principal */
-main h2 {
-  color: #00695c;
-  margin-bottom: 15px;
+/* Legendas do carrossel */
+.carousel-caption {
+  background: rgba(85, 35, 122, 0.273);
+  padding: 15px;
+  border-radius: 10px;
+  bottom: 20px;
 }
 
-.btn-pet {
-  background-color: #ff9800;
+.carousel-caption h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
   color: #fff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-size: 1rem;
-  transition: background 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
-.btn-pet:hover {
-  background-color: #e68900;
+.carousel-caption p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #ddd;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* Banner maior */
+section img {
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Rodapé */
 footer {
-  background-color: #004d40;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
+  background-color: #198754; /* verde Bootstrap */
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #55237A;
 }
