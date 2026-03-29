@@ -1,0 +1,76 @@
+/* Reset e fonte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(90deg, #00695c, #004d40);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* Carrossel */
+.carousel-inner img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Conteúdo principal */
+main h2 {
+  color: #00695c;
+  margin-bottom: 15px;
+}
+
+.btn-pet {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-pet:hover {
+  background-color: #e68900;
+}
+
+/* Rodapé */
+footer {
+  background-color: #004d40;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
