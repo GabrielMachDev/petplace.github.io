@@ -1,3 +1,4 @@
+/* Fonte profissional para o nome do site */
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
@@ -13,6 +14,7 @@
 
 /* Navbar */
 .navbar {
+  background-color: #198754; /* verde principal */
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
@@ -24,27 +26,36 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: #55237A !important;
+  color: #55237A !important; /* roxo destaque */
 }
 
 /* Barra de pesquisa */
 form[role="search"] input {
-  border-radius: 20px;;
+  border-radius: 20px;
 }
 
 form[role="search"] button {
   border-radius: 20px;
+  background-color: #198754; /* verde */
+  border: 1px solid #fff;    /* borda branca */
+  color: #fff;               /* texto branco */
 }
 
-/* Carrossel */
+form[role="search"] button:hover {
+  background-color: #55237A; /* roxo */
+  border-color: #55237A;
+  color: #fff;
+}
+
+/* Carrossel menor */
 #carouselPet img {
-  max-height: 400px; 
+  max-height: 400px;
   object-fit: cover;
 }
 
 /* Legendas do carrossel */
 .carousel-caption {
-  background: rgba(85, 35, 122, 0.273);
+  background: rgba(85, 35, 122, 0.7); /* roxo semitransparente */
   padding: 15px;
   border-radius: 10px;
   bottom: 20px;
@@ -61,34 +72,71 @@ form[role="search"] button {
 .carousel-caption p {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  color: #ddd;
+  color: #f1f1f1;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
-/* Banner maior */
-section img {
+/* Banner maior e responsivo */
+.banner-img {
   border-radius: 10px;
   margin-top: 10px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Botões gerais */
+.btn-success {
+  background-color: #198754; /* verde */
+  border-color: #198754;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #146c43; /* verde mais escuro */
+  border-color: #146c43;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #198754; /* verde */
+  border-color: #198754;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #146c43; /* verde mais escuro */
+  border-color: #146c43;
+  color: #fff;
+}
+
+.btn-outline-success {
+  border-color: #198754;
+  color: #198754;
+}
+
+.btn-outline-success:hover {
+  background-color: #146c43; /* verde mais escuro */
+  border-color: #146c43;
+  color: #fff;
+}
+
 /* Rodapé */
 footer {
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
-  background-color: #198754; /* verde Bootstrap */
+  background-color: #198754; /* verde */
 }
 
 footer a {
   text-decoration: none;
+  color: #f8f9fa;
 }
 
 footer a:hover {
-  text-decoration: underline;
   color: #55237A;
+  text-decoration: underline;
 }
