@@ -43,9 +43,15 @@ telefoneCliente.addEventListener("input", () => {
   if (tel.length > 11) tel = tel.slice(0, 11);
 
   if (tel.length <= 10) {
-    telefoneCliente.value = tel.replace(/(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
+    telefoneCliente.value = tel.replace(
+      /(\d{2})(\d{4})(\d{0,4})/,
+      "($1) $2-$3",
+    );
   } else {
-    telefoneCliente.value = tel.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3");
+    telefoneCliente.value = tel.replace(
+      /(\d{2})(\d{5})(\d{0,4})/,
+      "($1) $2-$3",
+    );
   }
 
   if (tel.length < 10) {

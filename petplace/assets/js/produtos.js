@@ -33,14 +33,15 @@ function mostrarMensagem(botao, texto) {
 }
 
 // Configura os eventos de clique nos botões de compra
-botoesCompra.forEach(botao => {
+botoesCompra.forEach((botao) => {
   botao.addEventListener("click", () => {
     const produtoNome = botao.parentElement.querySelector("h4").textContent;
-    const produtoPreco = botao.parentElement.querySelector(".fw-bold").textContent;
+    const produtoPreco =
+      botao.parentElement.querySelector(".fw-bold").textContent;
 
     const produto = {
       nome: produtoNome,
-      preco: produtoPreco
+      preco: produtoPreco,
     };
 
     adicionarAoCarrinho(produto);

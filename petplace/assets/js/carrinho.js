@@ -5,12 +5,13 @@ const totalCarrinho = document.getElementById("totalCarrinho");
 let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
 if (carrinho.length === 0) {
-  listaCarrinho.innerHTML = "<p class='text-center'>Seu carrinho está vazio.</p>";
+  listaCarrinho.innerHTML =
+    "<p class='text-center'>Seu carrinho está vazio.</p>";
   totalCarrinho.textContent = "";
 } else {
   let total = 0;
 
-  carrinho.forEach(item => {
+  carrinho.forEach((item) => {
     // Cria elemento para cada produto
     const div = document.createElement("div");
     div.classList.add("border", "rounded", "p-2", "mb-2");
@@ -18,7 +19,9 @@ if (carrinho.length === 0) {
     listaCarrinho.appendChild(div);
 
     // Soma o preço (remove R$ e vírgula)
-    const precoNumerico = parseFloat(item.preco.replace("R$", "").replace(",", "."));
+    const precoNumerico = parseFloat(
+      item.preco.replace("R$", "").replace(",", "."),
+    );
     total += precoNumerico;
   });
 

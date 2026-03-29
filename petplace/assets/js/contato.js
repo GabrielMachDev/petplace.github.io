@@ -2,7 +2,9 @@ const formContato = document.getElementById("contatoForm");
 const nomeContato = document.getElementById("nomeContato");
 const emailContato = document.getElementById("emailContato");
 const mensagemContato = document.getElementById("mensagemContato");
-const mensagemSucessoContato = document.getElementById("mensagemSucessoContato");
+const mensagemSucessoContato = document.getElementById(
+  "mensagemSucessoContato",
+);
 
 // Validação em tempo real do nome
 nomeContato.addEventListener("input", () => {

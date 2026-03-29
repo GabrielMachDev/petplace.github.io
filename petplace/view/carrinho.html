@@ -1,61 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetPlace - Carrinho</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <!-- Logo como favicon -->
-  <link rel="icon" type="image/png" href="../assets/img/logofav.png">
-</head>
-<body>
-  <!-- Cabeçalho -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-      <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="../index.html">
-          <img src="../assets/img/logo.png" alt="Logo PetPlace" width="40" height="40" class="me-2">
-          PetPlace
-        </a>
-        <div class="collapse navbar-collapse" id="navbarPet">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
-            <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
-            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetPlace - Carrinho</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- Logo como favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/logofav.png" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="../index.html"
+          >
+            <img
+              src="../assets/img/logo.png"
+              alt="Logo PetPlace"
+              width="40"
+              height="40"
+              class="me-2"
+            />
+            PetPlace
+          </a>
+          <div class="collapse navbar-collapse" id="navbarPet">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produtos.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicos.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastro.html">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="bg-purple text-light text-center p-3">
+      <h1>Carrinho de Compras</h1>
+      <p>Confira os itens adicionados</p>
+    </section>
+
+    <!-- Lista de produtos -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4">Itens no Carrinho</h2>
+      <div id="listaCarrinho" class="mb-4"></div>
+      <h4 id="totalCarrinho" class="text-end fw-bold"></h4>
+      <div class="text-center mt-4">
+        <button class="btn btn-success">Finalizar Compra</button>
       </div>
-    </nav>
-  </header>
+    </main>
 
-  <!-- Banner -->
-  <section class="bg-purple text-light text-center p-3">
-    <h1>Carrinho de Compras</h1>
-    <p>Confira os itens adicionados</p>
-  </section>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light text-center p-4">
+      <p>Contato: contato@petplace.com | Telefone: (51) 99999-9999</p>
+      <p>Endereço: Rua dos Animais, 123 - Gravataí/RS</p>
+      <hr class="border-light" />
+      <p>&copy; 2026 PetPlace - Todos os direitos reservados.</p>
+    </footer>
 
-  <!-- Lista de produtos -->
-  <main class="container my-5">
-    <h2 class="text-center mb-4">Itens no Carrinho</h2>
-    <div id="listaCarrinho" class="mb-4"></div>
-    <h4 id="totalCarrinho" class="text-end fw-bold"></h4>
-    <div class="text-center mt-4">
-      <button class="btn btn-success">Finalizar Compra</button>
-    </div>
-  </main>
-
-  <!-- Rodapé -->
-  <footer class="bg-dark text-light text-center p-4">
-    <p>Contato: contato@petplace.com | Telefone: (51) 99999-9999</p>
-    <p>Endereço: Rua dos Animais, 123 - Gravataí/RS</p>
-    <hr class="border-light">
-    <p>&copy; 2026 PetPlace - Todos os direitos reservados.</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="../assets/js/carrinho.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="../assets/js/carrinho.js"></script>
+  </body>
 </html>

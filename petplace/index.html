@@ -1,183 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- CSS customizado -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Logo como favicon -->
-  <link rel="icon" type="image/png" href="assets/img/logo.png">
-  <title>PetPlace</title>
-</head>
-<body>
-  <!-- Cabeçalho -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success" aria-label="Menu principal">
-      <div class="container-fluid">
-        <!-- Logo + nome -->
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="assets/img/logo.png" alt="Logo PetPlace" width="40" height="40" class="me-2">
-          PetPlace
-        </a>
-        <!-- Botão hamburguer (mobile) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPet" aria-controls="navbarPet" aria-expanded="false" aria-label="Abrir menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Links + pesquisa -->
-        <div class="collapse navbar-collapse" id="navbarPet">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="view/produtos.html">Produtos</a></li>
-            <li class="nav-item"><a class="nav-link" href="view/servicos.html">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="view/cadastro.html">Cadastro</a></li>
-            <li class="nav-item"><a class="nav-link" href="view/contato.html">Contato</a></li>
-          </ul>
-          <!-- Barra de pesquisa -->
-          <form class="d-flex ms-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar produtos..." aria-label="Buscar">
-            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
-          </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Logo como favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <title>PetPlace</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-success"
+        aria-label="Menu principal"
+      >
+        <div class="container-fluid">
+          <!-- Logo + nome -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img
+              src="assets/img/logo.png"
+              alt="Logo PetPlace"
+              width="40"
+              height="40"
+              class="me-2"
+            />
+            PetPlace
+          </a>
+          <!-- Botão hamburguer (mobile) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarPet"
+            aria-controls="navbarPet"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Links + pesquisa -->
+          <div class="collapse navbar-collapse" id="navbarPet">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="view/produtos.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="view/servicos.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="view/cadastro.html">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="view/contato.html">Contato</a>
+              </li>
+            </ul>
+            <!-- Barra de pesquisa -->
+            <form class="d-flex ms-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar produtos..."
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Pesquisar
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!-- Carrossel -->
-  <div id="carouselPet" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/pet1.jpg" class="d-block w-100" alt="Cachorro feliz após banho">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Banho Relaxante</h5>
-          <p>Seu pet limpo e feliz com nossos serviços.</p>
+    <!-- Carrossel -->
+    <div id="carouselPet" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/img/pet1.jpg"
+            class="d-block w-100"
+            alt="Cachorro feliz após banho"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Banho Relaxante</h5>
+            <p>Seu pet limpo e feliz com nossos serviços.</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/pet2.jpg" class="d-block w-100" alt="Gato recebendo carinho">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Carinho e Cuidado</h5>
-          <p>Tratamos cada pet com amor e atenção.</p>
+        <div class="carousel-item">
+          <img
+            src="assets/img/pet2.jpg"
+            class="d-block w-100"
+            alt="Gato recebendo carinho"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Carinho e Cuidado</h5>
+            <p>Tratamos cada pet com amor e atenção.</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/pet3.jpg" class="d-block w-100" alt="Petshop com produtos variados">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Produtos de Qualidade</h5>
-          <p>Variedade de acessórios e alimentos para seu pet.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPet" data-bs-slide="prev" aria-label="Imagem anterior">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselPet" data-bs-slide="next" aria-label="Próxima imagem">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-
-<!-- Banner -->
-<section class="text-center my-4">
-  <h2>Bem-vindo ao PetPlace</h2>
-  <p>Oferecemos produtos e serviços de qualidade para garantir saúde, conforto e diversão ao seu pet.</p>
-  <img src="assets/img/banner.jpg" alt="Pets felizes em destaque" class="img-fluid banner-img">
-</section>
-
-  <!-- Categorias -->
-   <section class="container my-5">
-    <h2 class="text-center mb-4">Categorias de Produtos</h2>
-    <div class="row text-center">
-      <div class="col-md-4 mb-3">
-        <h5>Acessórios</h5>
-        <p>Roupas, brinquedos e camas para seu pet.</p>
-        <a href="view/produtos.html#acessorios" class="btn btn-success">Ver acessórios</a>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5>Rações não perecíveis</h5>
-        <p>Alimentos balanceados para cães e gatos.</p>
-        <a href="view/produtos.html#racoes" class="btn btn-success">Ver rações</a>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5>Higiene e Limpeza</h5>
-        <p>Tapetes higiênicos, fraldas e mais.</p>
-        <a href="view/produtos.html#higiene" class="btn btn-success">Ver higiene</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Serviços em Destaque -->
-  <section class="container my-5">
-    <h2 class="text-center mb-4">Serviços em Destaque</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card text-white">
-          <img src="assets/img/banhotosa.jpg" class="card-img" alt="Banho e tosa para pets">
-          <div class="card-img-overlay d-flex flex-column justify-content-end">
-            <h5 class="card-title">Banho e Tosa</h5>
-            <p class="card-text">Cuidados especiais para deixar seu pet limpo e feliz.</p>
-            <a href="view/servicos.html" class="btn btn-success">Agende seu serviço</a>
+        <div class="carousel-item">
+          <img
+            src="assets/img/pet3.jpg"
+            class="d-block w-100"
+            alt="Petshop com produtos variados"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Produtos de Qualidade</h5>
+            <p>Variedade de acessórios e alimentos para seu pet.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card text-white">
-          <img src="assets/img/consulta.jpg" class="card-img" alt="Consulta veterinária">
-          <div class="card-img-overlay d-flex flex-column justify-content-end">
-            <h5 class="card-title">Consulta Veterinária</h5>
-            <p class="card-text">Atendimento profissional para a saúde do seu pet.</p>
-            <a href="view/servicos.html" class="btn btn-success">Agende seu serviço</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card text-white">
-          <img src="assets/img/vacinacao.jpg" class="card-img" alt="Vacinação de pets">
-          <div class="card-img-overlay d-flex flex-column justify-content-end">
-            <h5 class="card-title">Vacinação</h5>
-            <p class="card-text">Proteja seu pet com vacinas atualizadas.</p>
-            <a href="view/servicos.html" class="btn btn-success">Agende seu serviço</a>
-          </div>
-        </div>
-      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselPet"
+        data-bs-slide="prev"
+        aria-label="Imagem anterior"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselPet"
+        data-bs-slide="next"
+        aria-label="Próxima imagem"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-  </section>
 
-  <!-- Promoções -->
-  <section class="container my-4">
-    <h2>Promoções</h2>
-    <p>Confira nossas ofertas especiais para deixar seu pet ainda mais feliz.</p>
-    <a href="view/produtos.html" class="btn btn-warning">Ver promoções</a>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="bg-success text-light text-center p-4 mt-4">
-    <section>
-      <h3>Selos e Certificados</h3>
-      <p>✔ Site Seguro | ✔ Certificado SSL | ✔ Empresa Amiga dos Animais</p>
-    </section>
-    <section>
-      <h3>Formas de Pagamento</h3>
-      <p>Visa | MasterCard | Elo | Pix | Boleto Bancário</p>
-    </section>
-    <section>
-      <h3>Redes Sociais</h3>
+    <!-- Banner -->
+    <section class="text-center my-4">
+      <h2>Bem-vindo ao PetPlace</h2>
       <p>
-        <a href="https://facebook.com/petplace" class="text-light">Facebook</a> |
-        <a href="https://instagram.com/petplace" class="text-light">Instagram</a> |
-        <a href="https://wa.me/5551999999999" class="text-light">WhatsApp</a>
+        Oferecemos produtos e serviços de qualidade para garantir saúde,
+        conforto e diversão ao seu pet.
       </p>
+      <img
+        src="assets/img/banner.jpg"
+        alt="Pets felizes em destaque"
+        class="img-fluid banner-img"
+      />
     </section>
-    <p>Contato: contato@petplace.com | Telefone: (51) 99999-9999</p>
-    <p>Endereço: Rua dos Animais, 123 - Gravataí/RS</p>
-    <hr class="border-light" >
-    <p>&copy; 2026 PetPlace - Todos os direitos reservados.</p>
-  </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
+    <!-- Categorias -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Categorias de Produtos</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <h5>Acessórios</h5>
+          <p>Roupas, brinquedos e camas para seu pet.</p>
+          <a href="view/produtos.html#acessorios" class="btn btn-success"
+            >Ver acessórios</a
+          >
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Rações não perecíveis</h5>
+          <p>Alimentos balanceados para cães e gatos.</p>
+          <a href="view/produtos.html#racoes" class="btn btn-success"
+            >Ver rações</a
+          >
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Higiene e Limpeza</h5>
+          <p>Tapetes higiênicos, fraldas e mais.</p>
+          <a href="view/produtos.html#higiene" class="btn btn-success"
+            >Ver higiene</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços em Destaque -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Serviços em Destaque</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img
+              src="assets/img/banhotosa.jpg"
+              class="card-img"
+              alt="Banho e tosa para pets"
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h5 class="card-title">Banho e Tosa</h5>
+              <p class="card-text">
+                Cuidados especiais para deixar seu pet limpo e feliz.
+              </p>
+              <a href="view/servicos.html" class="btn btn-success"
+                >Agende seu serviço</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img
+              src="assets/img/consulta.jpg"
+              class="card-img"
+              alt="Consulta veterinária"
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h5 class="card-title">Consulta Veterinária</h5>
+              <p class="card-text">
+                Atendimento profissional para a saúde do seu pet.
+              </p>
+              <a href="view/servicos.html" class="btn btn-success"
+                >Agende seu serviço</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img
+              src="assets/img/vacinacao.jpg"
+              class="card-img"
+              alt="Vacinação de pets"
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
+              <h5 class="card-title">Vacinação</h5>
+              <p class="card-text">Proteja seu pet com vacinas atualizadas.</p>
+              <a href="view/servicos.html" class="btn btn-success"
+                >Agende seu serviço</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promoções -->
+    <section class="container my-4">
+      <h2>Promoções</h2>
+      <p>
+        Confira nossas ofertas especiais para deixar seu pet ainda mais feliz.
+      </p>
+      <a href="view/produtos.html" class="btn btn-warning">Ver promoções</a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-success text-light text-center p-4 mt-4">
+      <section>
+        <h3>Selos e Certificados</h3>
+        <p>✔ Site Seguro | ✔ Certificado SSL | ✔ Empresa Amiga dos Animais</p>
+      </section>
+      <section>
+        <h3>Formas de Pagamento</h3>
+        <p>Visa | MasterCard | Elo | Pix | Boleto Bancário</p>
+      </section>
+      <section>
+        <h3>Redes Sociais</h3>
+        <p>
+          <a href="https://facebook.com/petplace" class="text-light"
+            >Facebook</a
+          >
+          |
+          <a href="https://instagram.com/petplace" class="text-light"
+            >Instagram</a
+          >
+          |
+          <a href="https://wa.me/5551999999999" class="text-light">WhatsApp</a>
+        </p>
+      </section>
+      <p>Contato: contato@petplace.com | Telefone: (51) 99999-9999</p>
+      <p>Endereço: Rua dos Animais, 123 - Gravataí/RS</p>
+      <hr class="border-light" />
+      <p>&copy; 2026 PetPlace - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

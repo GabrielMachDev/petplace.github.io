@@ -27,7 +27,9 @@ dataAgendamento.addEventListener("input", () => {
   if (!dataAgendamento.value) {
     dataAgendamento.setCustomValidity("Informe uma data válida");
   } else if (dataSelecionada < hoje) {
-    dataAgendamento.setCustomValidity("A data não pode ser anterior ao dia atual");
+    dataAgendamento.setCustomValidity(
+      "A data não pode ser anterior ao dia atual",
+    );
   } else {
     dataAgendamento.setCustomValidity("");
   }
