@@ -39,9 +39,10 @@
   </header>
 
   <!-- Formulário de Cadastro -->
+     <section class="bg-purple text-light text-center p-3">
+    <h1>Cadastro de Cliente e Pet</h1>
+  </section>
   <main class="container my-5">
-    <h2 class="text-center mb-4">Cadastro de Cliente e Pet</h2>
-
     <!-- Mensagem de sucesso inline -->
     <div id="mensagemSucesso" class="text-center mb-3 fw-bold" aria-live="polite"></div>
 
@@ -75,6 +76,16 @@
         <label for="enderecoCliente" class="form-label">Endereço</label>
         <input type="text" class="form-control" id="enderecoCliente" required>
         <div class="invalid-feedback">Informe seu endereço.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="especiePet" class="form-label">Sexo</label>
+        <select id="especiePet" class="form-select" required>
+          <option value="">Selecione...</option>
+          <option value="Cão">Masculino</option>
+          <option value="Gato">Feminino</option>
+          <option value="Outro">Outro</option>
+        </select>
+        <div class="invalid-feedback">Selecione a espécie do pet.</div>
       </div>
 
       <!-- Dados do Pet -->
