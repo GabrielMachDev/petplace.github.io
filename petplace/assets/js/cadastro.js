@@ -43,15 +43,9 @@ telefoneCliente.addEventListener("input", () => {
   if (tel.length > 11) tel = tel.slice(0, 11);
 
   if (tel.length <= 10) {
-    telefoneCliente.value = tel.replace(
-      /(\d{2})(\d{4})(\d{0,4})/,
-      "($1) $2-$3",
-    );
+    telefoneCliente.value = tel.replace(/(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
   } else {
-    telefoneCliente.value = tel.replace(
-      /(\d{2})(\d{5})(\d{0,4})/,
-      "($1) $2-$3",
-    );
+    telefoneCliente.value = tel.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3");
   }
 
   if (tel.length < 10) {
@@ -112,13 +106,19 @@ formCadastro.addEventListener("submit", (event) => {
     return;
   }
 
-  // Mensagem de confirmação
-  mensagemSucesso.textContent = "✅ Cadastro realizado com sucesso!";
-  mensagemSucesso.style.color = "green";
+  // Mensagem de sucesso
+  mensagemSucesso.textContent = "Cadastro realizado com sucesso!";
+  mensagemSucesso.classList.add("mensagem-sucesso");
 
   // Resetar formulário
   formCadastro.reset();
   formCadastro.classList.remove("was-validated");
   senhaStrength.textContent = "";
   cpfFeedback.textContent = "";
+
+  // Remover mensagem após alguns segundos
+  setTimeout(() => {
+    mensagemSucesso.textContent = "";
+    mensagemSucesso.classList.remove("mensagem-sucesso");
+  }, 4000);
 });
